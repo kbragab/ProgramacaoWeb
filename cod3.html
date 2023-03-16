@@ -1,0 +1,132 @@
+<!- 
+Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Gabriel de Souza Almeida
+16/03/2023 ->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Armas</title>
+
+    <style>
+		table {
+			border-collapse: collapse;
+			margin: 20px 0;
+		}
+
+		th, td {
+			border: 1px solid black;
+			padding: 5px;
+			text-align: center;
+		}
+
+		th {
+			background-color: #ccc;
+			font-weight: bold;
+		}
+
+		.table-1 td:nth-child(2) {
+			background-color: #f2f2f2;
+		}
+
+		.table-2 th:first-child,
+		.table-2 td:first-child {
+			background-color: #f2f2f2;
+			font-weight: bold;
+		}
+
+		.table-3 td:nth-child(odd) {
+			background-color: #f2f2f2;
+		}
+	</style>
+
+</head>
+
+<body>
+    
+    <table class="table-1">
+		<thead>
+			<tr>
+				<th>Arma</th>
+				<th>Preço</th>
+				<th>Disponibilidade</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Pistola</td>
+				<td>R$ 1.200,00</td>
+				<td>Em estoque</td>
+			</tr>
+			<tr>
+				<td>Rifle</td>
+				<td>R$ 2.500,00</td>
+				<td>Indisponível</td>
+			</tr>
+			<tr>
+				<td>Revólver</td>
+				<td>R$ 1.800,00</td>
+				<td>Em estoque</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<table class="table-2">
+		<tr>
+			<th>Arma</th>
+			<td>Pistola</td>
+			<td>Rifle</td>
+			<td>Revólver</td>
+		</tr>
+		<tr>
+			<th>Preço</th>
+			<td>R$ 1.200,00</td>
+			<td>R$ 2.500,00</td>
+			<td>R$ 1.800,00</td>
+		</tr>
+		<tr>
+			<th>Disponibilidade</th>
+			<td>Em estoque</td>
+			<td>Indisponível</td>
+			<td>Em estoque</td>
+		</tr>
+	</table>
+
+	<table class="table-3">
+		<tr>
+			<th></th>
+			<th colspan="2">Armas de Fogo</th>
+		</tr>
+		<tr>
+			<th>Categoria</th>
+			<th>Pistolas</th>
+			<th>Rifles</th>
+		</tr>
+		<tr>
+			<th>Preço</th>
+			<td>R$ 1.200,00</td>
+			<td>R$ 2.500,00</td>
+		</tr>
+		<tr>
+			<th>Disponibilidade</th>
+			<td>Em estoque</td>
+			<td>Indisponível</td>
+		</tr>
+		<tr>
+			<th>Calibre</th>
+			<td>9mm</td>
+			<td>.50</td>    
+            </tr>
+            <tr>
+                <th>Peso</th>
+                <td>1,5kg</td>
+                <td>3,5kg</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
